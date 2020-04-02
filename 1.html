@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <h2> {{ msg }} </h2>
+        <h5>{{ 1<2 ? '真的':"假的"}}</h5>
+        <h3>{{1+1}}</h3>
+        <h4>{{istrue}}</h4>
+        <h3>{{ {name:'张三'} }}</h3>
+    </div>
+
+
+    <script type="text/javascript" src="./node_modules/vue/dist/vue.js"></script>
+
+    <script type="text/javascript">
+
+
+        var data={
+            msg:'你欢喜🥒吗',
+            istrue: 1==1,
+            str:'hello vue'
+        }
+
+        var vm = new Vue({
+    el:'#app',
+    data:data,
+    template:""
+
+    });
+   console.log(vm);
+    </script>
+
+</body>
+</html>
