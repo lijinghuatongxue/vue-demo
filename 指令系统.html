@@ -20,7 +20,9 @@
                     msg2:'<h2>指令系统2</h2>'
                 }
         },
-        template:' <div class="app">  <h2>{{msg}}</h2> <p v-text = "msg"></p> <div v-html = "mgs2"></div> </div>'
+        template:"" +
+            "<div class=\"app\">  <h2>{{msg}}</h2> <p v-text = \"msg\"></p> <div v-if='true'>今天吃啥</div> <div v-html = \"mgs2\"></div> </div>"
+
     });
 
 </script>
